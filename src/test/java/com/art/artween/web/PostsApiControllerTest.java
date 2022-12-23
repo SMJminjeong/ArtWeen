@@ -18,6 +18,7 @@ public class PostsApiControllerTest {
     @LocalServerPort
     private int port;
 
+    
     @Autowired
     private TestRestTemplate restTemplate;
 
