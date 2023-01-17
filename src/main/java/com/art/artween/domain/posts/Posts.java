@@ -1,5 +1,6 @@
 package com.art.artween.domain.posts;
 
+import com.art.artween.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 // 테이블과 링크될 클래스를 나타냄
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
     //해당 테이블의 PK 필드
     @Id
     //PK 생성 규칙 ( GenerationType.IDENTITY = auto_increment )
